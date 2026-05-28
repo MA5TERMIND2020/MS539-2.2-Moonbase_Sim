@@ -132,7 +132,7 @@
             textBox_Description.Name = "textBox_Description";
             textBox_Description.Size = new Size(446, 61);
             textBox_Description.TabIndex = 1;
-            textBox_Description.Text = "In the year 9999, the human race established a Moonbase in the 19th district of the Cutashi Astroid belt.";
+            textBox_Description.Text = "In the year 9999, the human race established a Moonbase in the 19th district of the Cutashi asteroid belt.";
             // 
             // label_Location_Name
             // 

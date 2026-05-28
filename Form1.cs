@@ -9,9 +9,9 @@ namespace Moon_Base
             InitializeComponent();
         }
 
-        string destination;
+        string destination = "";
 
-        public void Loop() //Method to perform a loop.
+        private static void Loop() //Method to perform a loop.
         {
             for (int i = 0; i < 5; i++)
             {
@@ -25,6 +25,9 @@ namespace Moon_Base
         }
         private void button_North_Click(object sender, EventArgs e)
         {
+            BackgroundImage = Resources.Hallway;
+            destination = "HQ";
+            textBox_Description.Text = $"We have recieved your request to be transported to {destination}. However, due to recent alien attacks, we must first verify that you are a human.";
             Loop();
             BackgroundImage = Resources.HQBase;
             label_Location_Name.Text = "Headquarters";
@@ -37,6 +40,9 @@ namespace Moon_Base
         }
         private void button_East_Click(object sender, EventArgs e)
         {
+            BackgroundImage = Resources.Hallway;
+            destination = "East Base";
+            textBox_Description.Text = $"We have recieved your request to be transported to the {destination}. However, due to recent alien attacks, we must first verify that you are a human.";
             Loop();
             BackgroundImage = Resources.EastBase;
             label_Location_Name.Text = "East Base";
@@ -50,6 +56,9 @@ namespace Moon_Base
 
         private void button_South_Click(object sender, EventArgs e)
         {
+            BackgroundImage = Resources.Hallway;
+            destination = "South Base";
+            textBox_Description.Text = $"We have recieved your request to be transported to the {destination}. However, due to recent alien attacks, we must first verify that you are a human.";
             Loop();
             BackgroundImage = Resources.SouthBase;
             label_Location_Name.Text = "South Base";
@@ -63,6 +72,9 @@ namespace Moon_Base
 
         private void button_West_Click(object sender, EventArgs e)
         {
+            BackgroundImage = Resources.Hallway;
+            destination = "West Base";
+            textBox_Description.Text = $"We have recieved your request to be transported to the {destination}. However, due to recent alien attacks, we must first verify that you are a human.";
             Loop();
             BackgroundImage = Resources.WestBase;
             label_Location_Name.Text = "West Base";
